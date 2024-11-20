@@ -1,0 +1,138 @@
+.header {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 52px;
+
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    & li {
+      text-transform: uppercase;
+
+      & a.active {
+        position: relative;
+        color: #FB0203;
+      }
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  &__links {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__sv {
+    color: #FF393D;
+    border: 1px solid #FF393D;
+  }
+
+  &__tg {
+    background-color: #E40C00;
+  }
+
+  &__sv, &__tg {
+    padding: 11px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    line-height: 24px;
+  }
+}
+
+.focus {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & span {
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    &__tag {
+      background-color: #FFF;
+      padding: 4.5px 14px;
+      color: #101010;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+  }
+}
+
+.card {
+  background-color: rgba(31, 31, 31, 0.8);
+  border-radius: 16px;
+}
+
+.cards-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 32px;
+
+  & .card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__smile {
+    font-size: 70px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 12px;
+  }
+
+  &__dates {
+    color: rgba(255, 255, 255, .7);
+  }
+}
+
+.cases {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 109px 109px;
+  gap: 20px;
+
+  & .case {
+    background-color: rgba(31, 31, 31, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+  }
+}
