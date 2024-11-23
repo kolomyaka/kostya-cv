@@ -1,25 +1,30 @@
+@import './styles/reset.scss';
+@import './styles/components.scss';
+@import './styles/typography.scss';
+
 :root {
   font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #fff;
+  background: radial-gradient(86.9% 86.9% at 50% 13.1%, #292020 0%, #000000 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 body {
-  background: radial-gradient(86.9% 86.9% at 50% 13.1%, #292020 0%, #000000 100%);
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
-  margin: 32px auto;
+  margin: 32px auto 100px;
   display: flex;
   flex-direction: column;
   max-width: 1125px;
