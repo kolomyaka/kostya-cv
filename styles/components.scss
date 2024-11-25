@@ -98,7 +98,7 @@
 
 
 
-&.pink {
+  &.pink {
     background-color: #E500F5;
   }
 
@@ -112,6 +112,10 @@
 
   &.blue {
     background-color: #004EE4;
+  }
+
+  &.purple {
+    background-color: #7621E0;
   }
 }
 
@@ -257,15 +261,27 @@
     }
   }
 
+  &__case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    & h4 {
+      color: #A1A1A1;
+    }
+  }
+
   &__photo {
     margin-top: 32px;
-  }
-}
 
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    &-container {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+  }
 }
 
 .company-results {
