@@ -223,6 +223,18 @@
     }
   }
 
+  &.green {
+    h4 {
+      color: #96E4CD;
+    }
+  }
+
+  &.dark-red {
+    h4 {
+      color: #E40038;
+    }
+  }
+
   &__card {
     display: flex;
     justify-content: center;
@@ -279,7 +291,7 @@
       margin-top: 32px;
       display: flex;
       align-items: center;
-      gap: 36px;
+      justify-content: space-between;
     }
   }
 }
