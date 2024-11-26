@@ -28,4 +28,12 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1125px;
+
+  &.about {
+    max-width: 960px;
+  }
+}
+
+.mb20 {
+  margin-bottom: 20px;
 }

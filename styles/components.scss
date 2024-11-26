@@ -204,6 +204,19 @@
     padding: 32px;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &:hover .cards-links__arrow {
+      display: block;
+      opacity: .8;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 32px;
   }
 
   &__smile {
@@ -238,6 +251,19 @@
     align-items: center;
     justify-content: center;
     border-radius: 16px;
+    position: relative;
+
+    &:hover .case__arrow {
+      display: block;
+    }
+
+    &__arrow {
+      display: none;
+      position: absolute;
+      top: 43px;
+      right: 32px;
+      opacity: .8;
+    }
   }
 }
 
@@ -441,4 +467,63 @@
       margin-bottom: 0;
     }
   }
+}
+
+.about__container {
+  max-width: 960px;
+}
+
+.about-content {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 52px;
+    gap: 20px;
+
+    &.hobbies {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+  }
+
+  &__list {
+    list-style: inherit;
+    padding-left: 20px;
+
+    li {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 52px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p {
+        color: #A1A1A1;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 92px 92px 92px 92px 92px 92px;
+  grid-template-rows: 92px 92px;
+  grid-gap: 36px 49px;
 }
