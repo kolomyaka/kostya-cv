@@ -13,6 +13,43 @@
     & li {
       text-transform: uppercase;
 
+      &.dropdown-container {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        position: relative;
+
+        &:hover .dropdown {
+          display: flex;
+        }
+      }
+
+      & .dropdown {
+        display: none;
+        position: absolute;
+        background-color: #1E1D1D;
+        flex-direction: column;
+        left: -50%;
+        top: 100%;
+        z-index: 2;
+        padding: 20px;
+        border-radius: 16px;
+        gap: 12px;
+        width: 130px;
+
+        & a {
+          padding-bottom: 12px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+        }
+      }
+
+
+
       & a.active {
         position: relative;
         color: #FB0203;

@@ -13,20 +13,34 @@
     <header class="header semi-bold">
         <nav class="xs">
             <ul>
-                <li>Главная</li>
-                <li>Кейсы</li>
+                <li>
+                    <a href="/index.html">Главная</a>
+                </li>
+                <li class="dropdown-container">
+                    <p>Кейсы</p>
+                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.25 9.70007L11.5 15.4501L5.75 9.70007" stroke="white" stroke-width="2"/>
+                    </svg>
+
+                    <div class="dropdown">
+                        <a href="/ad-mortgage.html" class="xs">A&D MORTAGE</a>
+                        <a href="/vtb.html" class="xs">ВТБ</a>
+                        <a href="/rosbank.html" class="xs active">РОСБАНК</a>
+                        <a href="/yami-yami.html" class="xs">YAMI-YAMI</a>
+                    </div>
+                </li>
                 <li>ОБО МНЕ</li>
             </ul>
         </nav>
         <div class="contacts">
-            <h6>kostya.belinskiy@list.ru • +7 (913) 930 12 13</h6>
+            <h6><a href="mailto:kostya.belinskiy@list.ru">kostya.belinskiy@list.ru</a> • <a href="tel:+7 (913) 930 12 13">+7 (913) 930 12 13</a></h6>
             <div class="contacts__links">
-                <div class="contacts__tg">
+                <a target="_blank" href="https://t.me/design_bandit" class="contacts__tg">
                     Написать в Telegram
-                </div>
-                <div class="contacts__sv">
+                </a>
+                <a target="_blank" href="https://docs.google.com/document/d/1_i4bTUx2DDxh657j1yRCmiogHx8ZfnYRnIIQrEBzAKo/edit?tab=t.0" class="contacts__sv">
                     CV
-                </div>
+                </a>
             </div>
         </div>
     </header>
