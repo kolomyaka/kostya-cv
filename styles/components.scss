@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 52px;
+  font-weight: 600;
 
   & ul {
     display: flex;
@@ -76,10 +77,21 @@
   &__sv {
     color: #FF393D;
     border: 1px solid #FF393D;
+    transition: all .3s ease;
+
+    &:hover {
+      border-color: #BA0A00;
+      color: #BA0A00;
+    }
   }
 
   &__tg {
+    transition: background-color .3s ease;
     background-color: #E40C00;
+
+    &:hover {
+      background-color: #BA0A00;
+    }
   }
 
   &__sv, &__tg {
