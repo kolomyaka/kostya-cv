@@ -17,7 +17,6 @@ export default defineConfig(() => {
                 }
             }
         },
-        base: 'kostya-cv',
         plugins: [
             ViteImageOptimizer({
                 /* pass your config */
