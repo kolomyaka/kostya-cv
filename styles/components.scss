@@ -469,6 +469,10 @@
     cursor: pointer;
     padding-bottom: 32px;
 
+    & h3.m {
+      font-weight: 600;
+    }
+
     &--arrow {
       transition: transform 0.3s ease;
 
@@ -497,6 +501,10 @@
     flex-direction: column;
     gap: 12px;
     margin-bottom: 32px;
+
+    & h4.m {
+      font-weight: 600;
+    }
 
     &:last-child {
       margin-bottom: 0;
