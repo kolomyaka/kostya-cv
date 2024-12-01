@@ -570,3 +570,18 @@
   grid-template-rows: 92px 92px;
   grid-gap: 36px 49px;
 }
+
+.scroll-button {
+  position: fixed;
+  right: 40px;
+  bottom: 64px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(20px);
+}
+
+.scroll-button.show {
+  opacity: 1;
+  transform: translateY(0);
+}
