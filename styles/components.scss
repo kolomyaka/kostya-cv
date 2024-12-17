@@ -176,13 +176,14 @@
 .focus {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 
   &-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    flex-direction: row-reverse;
   }
 
   &-info {
@@ -383,6 +384,43 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+  }
+
+  &__task {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+
+
+    &-title {
+
+    }
+  }
+
+  &__list {
+    padding-left: 20px;
+
+    li {
+      font-size: 18px;
+      line-height: 25.2px;
+      font-weight: 500;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -15px;
+        top: calc(50% - 2px);
+        //transform: translateY(-50%);
+        width: 4px; /* Размер кружка */
+        height: 4px; /* Размер кружка */
+        background-color: #fff; /* Цвет кружка */
+        border-radius: 50%;
+      }
     }
   }
 }
