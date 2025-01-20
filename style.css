@@ -54,8 +54,8 @@ body {
   .mobile_warning {
     position: absolute;
     display: block;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background: radial-gradient(86.9% 86.9% at 50% 13.1%, #292020 0%, #000000 100%);
