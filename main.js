@@ -6,10 +6,8 @@ const scrollButton = document.querySelector('.scroll-button')
 for (let i = 0; i < accordionElements.length; i++) {
     const currentAccordion = accordionElements[i]
     currentAccordion.addEventListener('click', () => {
-      const arrow = currentAccordion.querySelector('.accordion__title--arrow');
-      const content = currentAccordion.nextElementSibling
-      arrow.classList.toggle('active');
-      content.classList.toggle('active');
+      const accordion = currentAccordion.parentElement
+      accordion.classList.toggle('active');
   })
 }
 
@@ -18,7 +16,6 @@ function scrollToTop() {
 }
 
 function toggleScrollButton() {
-    console.log('here', window.scrollY)
     if (window.scrollY > 200) {
         scrollButton.classList.add('show')
     } else {
