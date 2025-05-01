@@ -14,6 +14,7 @@ export default defineConfig(() => {
                     rosbank: resolve(__dirname, 'rosbank.html'),
                     vtb: resolve(__dirname, 'vtb.html'),
                     "yami-yami": resolve(__dirname, 'yami-yami.html'),
+                    yandex_9e20bf8c2d6c26fe: resolve(__dirname, 'yandex_9e20bf8c2d6c26fe.html')
                 }
             }
         },
