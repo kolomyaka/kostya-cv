@@ -42,38 +42,3 @@ body {
   margin-bottom: 32px;
 }
 
-.mobile_warning {
-  display: none;
-
-}
-
-@media (max-width: 900px) {
-  .container {
-    display: none;
-  }
-  .mobile_warning {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: radial-gradient(86.9% 86.9% at 50% 13.1%, #292020 0%, #000000 100%);
-  }
-
-  .mobile_warning__content {
-    margin: 194px 16px;
-    text-align: center;
-
-    & h2 {
-      font-family: "Unbounded", serif;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 44px;
-    }
-
-    & h4 {
-      font-weight: 500;
-    }
-  }
-}
