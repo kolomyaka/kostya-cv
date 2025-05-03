@@ -631,7 +631,7 @@
     margin-bottom: 32px;
 
     &--bordered {
-      border: 1px solid #fff;
+      background-color: #120E0E;
       border-radius: 16px;
       text-align: center;
       padding: 34px 33px;
@@ -650,6 +650,7 @@
     }
 
     img {
+      border-radius: 16px;
       margin-top: 20px;
     }
   }
@@ -951,6 +952,27 @@
     & img {
       max-width: 100px;
       width: 100%;
+    }
+  }
+
+  .accordion {
+    padding: 24px 24px 0 24px;
+
+    &__title {
+      padding-bottom: 24px;
+    }
+
+
+    &__item.mb20 h4.mb20 {
+      margin-bottom: 12px;
+    }
+
+    &__item--bordered {
+      padding: 20px;
+      & p {
+        font-size: 10px;
+        line-height: 18px;
+      }
     }
   }
 }
