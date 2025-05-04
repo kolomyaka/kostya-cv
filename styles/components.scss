@@ -353,6 +353,12 @@
     }
   }
 
+  &__tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
   &__chips {
     display: flex;
     align-items: center;
@@ -384,7 +390,6 @@
     margin-top: 32px;
 
     &-container {
-      margin-top: 32px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -466,7 +471,7 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 302px 302px;
+    grid-template-rows: 302px;
     gap: 52px 75px;
 
     &.main {
@@ -963,6 +968,11 @@
 
   .accordion {
     padding: 24px 24px 0 24px;
+    margin-bottom: 20px;
+
+    &.active .accordion__content {
+      padding-bottom: 24px;
+    }
 
     &__title {
       padding-bottom: 24px;
@@ -981,4 +991,9 @@
       }
     }
   }
+}
+
+.divider {
+  border: 1px solid #767676;
+  margin: 20px 0;
 }
