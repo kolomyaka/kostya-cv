@@ -56,3 +56,33 @@
 .black {
   font-weight: 900;
 }
+
+.gray {
+  color: #A1A1A1;
+}
+
+@media (max-width: 900px) {
+  .l {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .xs {
+    font-size: 14px;
+  }
+
+  .xxl {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .s {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .m {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
