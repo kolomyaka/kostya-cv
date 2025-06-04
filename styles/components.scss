@@ -684,7 +684,7 @@
 
     p {
       font-size: 18px;
-      line-height: 21px;
+      line-height: 24px;
       font-weight: 500;
     }
   }
@@ -717,6 +717,10 @@
       }
     }
   }
+}
+
+.no-cropped {
+  border-radius: 0 !important;
 }
 
 .services {
