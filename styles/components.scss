@@ -777,6 +777,11 @@
     display: grid;
     grid-template-columns: 1fr;
 
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
     & .card {
       padding: 18px;
     }
@@ -824,8 +829,23 @@
   top: -30px;
 }
 
+.adaptive-stack {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 660px) {
 
+  .adaptive-stack {
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .smile {
+    width: 24px;
+    height: 24px;
+  }
 
   .other-case {
     &__container {
