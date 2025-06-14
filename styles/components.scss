@@ -380,6 +380,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    position: relative;
 
     & h4 {
       color: #A1A1A1;
@@ -662,7 +663,7 @@
 
     img {
       border-radius: 16px;
-      margin-top: 20px;
+      margin-top: 12px;
     }
   }
 }
@@ -803,6 +804,7 @@
   }
 
   .company-grant__case {
+
     & img {
         max-width: 200px;
         width: 100%;
@@ -810,7 +812,17 @@
   }
 }
 
+.tooltip {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: -30px;
+  top: -30px;
+}
+
 @media (max-width: 660px) {
+
+
   .other-case {
     &__container {
       display: grid;
@@ -966,6 +978,13 @@
     }
   }
 
+  .tooltip {
+    width: 60px !important;
+    height: 60px !important;
+    top: -15px;
+    right: -15px;
+  }
+
   .accordion {
     padding: 24px 24px 0 24px;
     margin-bottom: 20px;
@@ -991,6 +1010,12 @@
       }
     }
   }
+
+  .xxs.gray {
+    font-size: 12px;
+  }
+
+
 }
 
 .divider {
