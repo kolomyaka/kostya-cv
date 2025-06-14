@@ -16,6 +16,8 @@ function scrollToTop() {
 }
 
 function toggleScrollButton() {
+    if (!scrollButton) return;
+
     if (window.scrollY > 200) {
         scrollButton.classList.add('show')
     } else {
@@ -24,10 +26,19 @@ function toggleScrollButton() {
 }
 
 // Add event listener to the scroll button
-scrollButton.addEventListener('click', scrollToTop)
+scrollButton?.addEventListener('click', scrollToTop)
 
 // Add event listener to window scroll
 window.addEventListener('scroll', toggleScrollButton)
 
 // Initial check to see if the button should be visible
 toggleScrollButton()
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownContainer = document.querySelector('.dropdown-container');
+    const dropdown = dropdownContainer.querySelector('.dropdown');
+
+    dropdownContainer.addEventListener('click', (event) => {
+        dropdown.classList.toggle('active'); // Добавляет/удаляет класс для отображения dropdown
+    });
+});
