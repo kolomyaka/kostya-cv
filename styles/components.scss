@@ -823,6 +823,7 @@
 
 .tooltip {
   position: absolute;
+  max-width: 130px !important;
   width: 130px;
   height: 130px;
   right: -30px;
