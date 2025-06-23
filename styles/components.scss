@@ -331,6 +331,12 @@
     }
   }
 
+  &.purple {
+    h4 {
+      color: #4859F1;
+    }
+  }
+
   &__card {
     display: flex;
     justify-content: center;
@@ -578,6 +584,10 @@
     z-index: 6;
 
     .other-case__project-name {
+      text-align: center;
+    }
+
+    & .m.bold {
       text-align: center;
     }
   }
