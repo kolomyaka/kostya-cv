@@ -423,6 +423,9 @@
 
   &__list {
     padding-left: 20px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
 
     &.gap li {
       margin-top: 12px;
@@ -622,7 +625,7 @@
     transition: padding-bottom 0.1s ease;
 
     & h3.m {
-      font-weight: 600;
+      font-weight: 700;
     }
 
     &--arrow {
@@ -736,9 +739,9 @@
 
 .services {
   display: grid;
-  grid-template-columns: 92px 92px 92px 92px 92px 92px;
-  grid-template-rows: 92px 92px;
-  grid-gap: 36px 49px;
+  grid-template-columns: repeat(12, 63px);
+  grid-template-rows: 63px;
+  grid-gap: 25px;
 }
 
 .scroll-button {
@@ -846,6 +849,13 @@
 }
 
 @media (max-width: 660px) {
+
+  .other-case__title {
+    & .it-contact {
+      width: 120px;
+      height: 25px;
+    }
+  }
 
   .adaptive-stack {
     flex-direction: row;
