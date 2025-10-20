@@ -1124,6 +1124,26 @@
 
 }
 
+
+.image-with-points {
+  position: relative;
+
+  & h4 {
+    position: absolute;
+    top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-with-points {
+    margin-top: 20px;
+    & h4 {
+      position: absolute;
+      top: 0px;
+    }
+  }
+}
+
 .divider {
   border: 1px solid #767676;
   margin: 20px 0;
