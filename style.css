@@ -3,7 +3,7 @@
 @import './styles/typography.scss';
 
 :root {
-  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -54,3 +54,6 @@ body {
   margin-bottom: 32px;
 }
 
+.mb24 {
+  margin-bottom: 24px;
+}

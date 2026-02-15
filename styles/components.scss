@@ -444,7 +444,7 @@
     }
 
     li {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 25.2px;
       font-weight: 500;
       position: relative;
@@ -644,6 +644,12 @@
     padding-bottom: 32px;
     transition: padding-bottom 0.1s ease;
 
+    &--with-stats {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
     & h3.m {
       font-weight: 700;
     }
@@ -724,6 +730,28 @@
     position: absolute;
     top: 16px;
     right: 16px;
+  }
+}
+
+.stat {
+  padding: 4.4px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #34C759;
+  border-radius: 12px;
+  font-weight: 600;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
   }
 }
 
