@@ -446,7 +446,7 @@
     li {
       font-size: 16px;
       line-height: 25.2px;
-      font-weight: 500;
+      font-weight: 400;
       position: relative;
 
       &.start-marker {
@@ -925,6 +925,18 @@
 
 @media (max-width: 660px) {
 
+  .stat {
+    &__title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   .other-case__title {
     & .it-contact {
       width: 120px;
@@ -1066,7 +1078,7 @@
     }
 
     &__list li {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 21px;
     }
 
