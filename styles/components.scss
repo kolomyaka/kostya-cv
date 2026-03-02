@@ -1174,6 +1174,10 @@
   }
 }
 
+.image__container img.mb32 {
+  border-radius: 4px;
+}
+
 @media (max-width: 600px) {
   .image-with-points {
     margin-top: 20px;
@@ -1182,6 +1186,13 @@
       top: 0px;
     }
   }
+
+  .image__container {
+    & img.mb32 {
+      margin-bottom: 20px;
+    }
+  }
+
 }
 
 .divider {
