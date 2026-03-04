@@ -1,0 +1,40 @@
+.embla__viewport {
+  overflow: hidden;
+  position: relative;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  position: relative;
+}
+
+.embla__buttons {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  & .button {
+    cursor: pointer;
+  }
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+
+  & .image__container {
+    position: relative;
+
+    & .tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-transform: uppercase;
+    }
+  }
+}

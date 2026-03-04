@@ -1,4 +1,6 @@
 import './style.css'
+import './styles/embla.scss'
+import './embla.js'
 
 const accordionElements = document.getElementsByClassName('accordion__title')
 const scrollButton = document.querySelector('.scroll-button')

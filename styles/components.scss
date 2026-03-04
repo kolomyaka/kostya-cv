@@ -123,6 +123,15 @@
     color: #000;
   }
 
+  &.smooth {
+    background-color: rgba(#000, 23%);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
   &.medium {
     padding: 4.46px 14px;
     font-size: 14px;
