@@ -13,7 +13,8 @@ export default defineConfig(() => {
                     rosbank: resolve(__dirname, 'rosbank.html'),
                     vtb: resolve(__dirname, 'vtb.html'),
                     "health": resolve(__dirname, 'health.html'),
-                    yandex_9e20bf8c2d6c26fe: resolve(__dirname, 'yandex_9e20bf8c2d6c26fe.html')
+                    yandex_9e20bf8c2d6c26fe: resolve(__dirname, 'yandex_9e20bf8c2d6c26fe.html'),
+                    'it-contact': resolve(__dirname, 'it-contact.html')
                 }
             }
         },
