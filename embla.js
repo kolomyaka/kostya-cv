@@ -1,13 +1,15 @@
 import EmblaCarousel from 'embla-carousel'
 
-const wrapperNode = document.querySelector('.embla')
-const viewportNode = wrapperNode.querySelector('.embla__viewport')
-const prevButtonNode = wrapperNode.querySelector('.embla__prev')
-const nextButtonNode = wrapperNode.querySelector('.embla__next')
+const wrapperNode = document.querySelectorAll('.embla')
 
-const emblaApi = EmblaCarousel(viewportNode, { loop: false })
+wrapperNode.forEach((wrapper) => {
+    const viewportNode = wrapper.querySelector('.embla__viewport')
+    const prevButtonNode = wrapper.querySelector('.embla__prev')
+    const nextButtonNode = wrapper.querySelector('.embla__next')
 
-prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
-nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+    const emblaApi = EmblaCarousel(viewportNode, { loop: false })
 
-console.log('here', emblaApi)
+    prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
+    nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+})
+
