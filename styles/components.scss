@@ -411,6 +411,7 @@
 
     & h4 {
       color: #A1A1A1;
+      font-weight: 600;
     }
   }
 
@@ -1150,6 +1151,12 @@
 
     &__title {
       padding-bottom: 24px;
+      align-items: flex-start;
+
+      &--with-stats {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
 
