@@ -522,6 +522,7 @@
     transition: transform 0.3s ease;
     justify-content: space-between;
     height: 100%;
+    overflow: hidden;
   }
 
   &__photo {
@@ -635,7 +636,7 @@
   margin-bottom: 32px;
 
   &.active .accordion__title {
-    padding-bottom: 12px;
+    padding-bottom: 20px;
     transition: padding-bottom 0.2s ease;
 
     &--arrow {
@@ -836,6 +837,7 @@
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(20px);
+  z-index: 100;
 }
 
 .scroll-button.show {
