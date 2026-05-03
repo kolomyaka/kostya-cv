@@ -7,6 +7,7 @@ wrapperNode.forEach((wrapper) => {
     const prevButtonNode = wrapper.querySelector('.embla__prev')
     const nextButtonNode = wrapper.querySelector('.embla__next')
 
+
     const emblaApi = EmblaCarousel(viewportNode, { loop: false })
 
     prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
