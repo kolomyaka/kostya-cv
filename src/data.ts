@@ -238,14 +238,13 @@ export const about = {
     'Постоянно изучаю современные продуктовые практики и крупные дизайн-системы, участвую в профессиональных митапах. В свободное время занимаюсь музыкой и графическим дизайном.',
   ],
   tools: [
-    { name: 'Figma', short: 'Fg', bg: '#1e1e1e', color: '#ffffff' },
-    { name: 'Premiere Pro', short: 'Pr', bg: '#1a1443', color: '#9999ff' },
-    { name: 'After Effects', short: 'Ae', bg: '#1a1443', color: '#9999ff' },
-    { name: 'Photoshop', short: 'Ps', bg: '#0d2136', color: '#31a8ff' },
-    { name: 'Miro', short: 'M', bg: '#ffd02f', color: '#1c1c1e' },
-    { name: 'Mattermost', short: 'Mm', bg: '#2d5bd1', color: '#ffffff' },
-    { name: 'Jira', short: 'Jr', bg: '#5b5fc7', color: '#ffffff' },
-    { name: 'Discord', short: 'Dc', bg: '#5865f2', color: '#ffffff' },
+    { name: 'Figma', src: '/Logo/Figma.svg' },
+    { name: 'Premiere Pro', src: '/Logo/Adobe Premier Pro.svg' },
+    { name: 'After Effects', src: '/Logo/Adobe After Effects.svg' },
+    { name: 'Photoshop', src: '/Logo/Adobe Photshop.svg' },
+    { name: 'Miro', src: '/Logo/Miro.svg' },
+    { name: 'Trello', src: '/Logo/Trello.svg' },
+    { name: 'Teams', src: '/Social Media/Teams.svg' },
   ],
 }
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { navItems } from './data.ts'
+import { navItems } from './data'
 
 // Скролл-спай: какой кейс сейчас на экране (общий для таббара и панели)
 export function useActiveSection() {
@@ -24,13 +24,4 @@ export function useActiveSection() {
   }, [])
 
   return active
-}
-
-// Настроение кейса: цвет левой панели + тёмная/светлая тема текста
-export const sectionThemes: Record<string, { bg: string; dark?: boolean }> = {
-  ama: { bg: '#161618', dark: true }, // чёрный люкс
-  'it-kontakt': { bg: '#e9edf4' }, // холодный финтех
-  rosbank: { bg: '#f6edef' }, // розоватый, в тон бренда
-  health: { bg: '#f7f0e6' }, // тёплое здоровье
-  about: { bg: '#f4f3f1' }, // нейтральный
 }

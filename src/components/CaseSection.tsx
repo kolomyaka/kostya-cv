@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { AnimatePresence, m } from 'framer-motion'
-import type { CaseBlock, CaseStudy, Figure } from '../data.ts'
-import { Chip, MetricChip } from './Chip.tsx'
-import SmartImage from './SmartImage.tsx'
+import type { CaseBlock, CaseStudy, Figure } from '../data'
+import { Chip, MetricChip } from './Chip'
+import SmartImage from './SmartImage'
 
 function FadeIn({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
@@ -126,7 +126,7 @@ function CollapsibleBlock({ block }: { block: CaseBlock }) {
         aria-expanded={open}
       >
         <span className="flex flex-wrap items-center gap-x-3 gap-y-2">
-          <span className="text-lg font-semibold tracking-tight">{block.title}</span>
+          <span className="text-lg font-normal tracking-tight">{block.title}</span>
           {block.metrics?.map((m) => (
             <MetricChip key={m}>{m}</MetricChip>
           ))}
@@ -174,10 +174,10 @@ export default function CaseSection({ study }: { study: CaseStudy }) {
             <Chip key={t}>{t}</Chip>
           ))}
         </div>
-        <h2 className="text-2xl font-semibold tracking-tight">{study.title}</h2>
+        <h2 className="text-2xl font-normal tracking-tight">{study.title}</h2>
         <p className="max-w-3xl text-sm leading-relaxed text-ink-soft">{study.description}</p>
         <div>
-          <h3 className="mb-3 text-lg font-semibold tracking-tight">
+          <h3 className="mb-3 text-lg font-normal tracking-tight">
             Продукты, над которыми работал:
           </h3>
           <div className="flex flex-wrap gap-2">

@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { LazyMotion } from 'framer-motion'
 import './index.css'
-import App from './App.tsx'
+import App from './App'
 
 // Ядро анимаций подгружается отдельным чанком, не блокируя первый рендер
-const loadMotionFeatures = () => import('./motion-features.ts').then((mod) => mod.default)
+const loadMotionFeatures = () => import('./motion-features').then((mod) => mod.default)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
